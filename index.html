@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/to-do-list.png" type="image/x-icon">
+    <title>To-do List App</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script type="module" src="./node_modules/bootstrap/dist/js/bootstrap.esm.min.js"></script>
+    <!-- Bootstrap Icons Pack-->
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+    <!-- App Style & Script -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <script defer src="/js/index.js"></script>
+</head>
+<body>
+<div class="mx-auto border vh-100 overflow-x-auto">
+    <header class="border-bottom d-flex flex-column align-items-center">
+        <h1 class="d-flex justify-content-center align-items-center
+                gap-3 pt-2 fs-3">
+            <div class="animate__animated animate__heartBeat">
+                <i class="bi bi-check2-circle text-primary"></i>
+            </div>
+            To-do List App
+        </h1>
+        <div class="d-flex gap-2 pb-1">
+            <i class="bi bi-sun-fill"></i>
+            <div class="form-check form-switch d-flex justify-content-center">
+                <input id="mode" class="form-check-input" type="checkbox">
+            </div>
+            <i class="bi bi-moon-stars-fill"></i>
+        </div>
+    </header>
+    <main>
+        <form action="javascript:void(0)" class="d-flex gap-2 p-3 sticky-top bg-body border-bottom">
+            <input id="txt-task" autofocus class="form-control"
+                   type="text"
+                   placeholder="Eg. Create a new mockup design">
+            <button id="btn-add-task"
+                    class="btn btn-primary flex-shrink-0">
+                ADD TASK
+            </button>
+        </form>
+        <section id="list-container" class="p-2 pt-2">
+            <!--                            <div tabindex="0" class="list-item d-flex justify-content-between p-2 align-items-center animate__animated animate__fadeInUp">-->
+            <!--                                <label class="d-flex gap-2">-->
+            <!--                                    <input type="checkbox" class="form-check-input">-->
+            <!--                                    Task Item 1-->
+            <!--                                </label>-->
+            <!--                                <i class="bi bi-trash3 me-2"></i>-->
+            <!--                            </div>-->
+            <div class="text-center text-body-secondary pt-2">
+                No items yet.
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>
